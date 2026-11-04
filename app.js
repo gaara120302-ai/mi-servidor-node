@@ -99,7 +99,7 @@ app.post('/api/procesar-bot', async (req, res) => {
     try {
         console.log('🤖 Iniciando bot con proxy...');
         
-        // 🛠️ CORRECCIÓN CLAVE: Argumentos para que no se caiga por falta de RAM (512MB)
+        // Argumentos para que no se caiga por falta de RAM (512MB)
         browser = await chromium.launch({
             proxy: proxyConfig,
             headless: true, 
